@@ -1,0 +1,70 @@
+.moving-icons {
+    
+    overflow: hidden;
+    height: 65px;
+}
+.moving-icons div {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    transform: translate(100%, 0);
+}
+.moving-icons div p {
+    font-size: 25px;
+    color:#1d2f30;
+    margin: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.moving-icons .ticker-wrapper__first-half, .header .ticker-wrapper__second-half {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    animation: ticker 30s infinite linear forwards;
+}
+@keyframes ticker {
+    0% {
+        transform: translate(100%, 0);
+   }
+    50% {
+        transform: translate(0, 0);
+   }
+    100% {
+        transform: translate(-100%, 0);
+   }
+}
+
+.running-line-header {
+    color: black;
+    background: transparent;
+    text-align: center;
+}
+
+.running-line {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(../assets/img/Desktop1.png);
+}
+
+.slides {
+    background: transparent !important;
+}
+
+.slide.intro {
+    height: 65vh;
+}
+
+.slide.custom {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(../assets/img/Desktop1.png);
+}
+
+.margin-top-30 {
+margin-top: 300px;
+}
